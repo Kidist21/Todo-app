@@ -1,36 +1,87 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 📝 TODO App
 
-## Getting Started
+Welcome to the **TODO App** project! This application is built using **React.js** with **Next.js** as the framework, based on a tutorial by [Spruce Emmanuel](#). It's a simple yet powerful tool to manage your daily tasks.
 
-First, run the development server:
+## 🚀 Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- ✅ **Add New TODOs**: Easily add tasks to your list.
+- ✏️ **Edit & Delete TODOs**: Modify or remove existing tasks with ease.
+- ✔️ **Mark TODOs as Completed**: Track your progress by marking tasks as complete.
+- 📊 **Track Completed TODOs**: Keep an overview of all completed tasks.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 📚 Table of Contents
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+- [Project Setup](#project-setup)
+- [Components](#components)
+- [Styling](#styling)
+- [Functionality](#functionality)
+- [Persisting Data](#persisting-data)
+- [Conclusion](#conclusion)
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## 🛠️ Project Setup
 
-## Learn More
+To set up the project locally, follow these steps:
 
-To learn more about Next.js, take a look at the following resources:
+1. **Clone the Repository**:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+    ```bash
+    git clone https://github.com/Kidist21/todo-app.git
+    ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+2. **Navigate to your project directory**:
 
-## Deploy on Vercel
+    ```bash
+    cd todo-app
+    ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+3. **Create a new Next.js app**:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+    ```bash
+    npx create-next-app@latest
+    ```
+
+4. **Start the development server**:
+
+    ```bash
+    npm run dev
+    # or with yarn
+    yarn run dev
+    ```
+
+## 🧩 Components
+
+The app is organized into several core components:
+
+- **📌 Header Component**: Displays the app's title.
+- **🦸 TODOHero Component**: The main interface for managing tasks.
+- **📝 Form Component**: Handles input for adding new TODOs.
+- **📋 TODOList Component**: Displays the list of tasks with interactive options.
+
+## 🎨 Styling
+
+Basic yet clean CSS is used to style the application, ensuring a user-friendly experience while keeping the focus on functionality.
+
+## ⚙️ Functionality
+
+### ➕ Adding TODOs
+- Users can add tasks via the form component, updating the app's state.
+
+### 🛠️ Editing & Deleting TODOs
+- Modify or remove tasks directly from the TODO list.
+
+### ✔️ Marking TODOs as Completed
+- Users can mark tasks as complete, helping them track progress.
+
+## 💾 Persisting Data
+
+To maintain TODOs across sessions, the app uses `localStorage`:
+
+- **Saving Data to localStorage**: Automatically saves the current state.
+- **Loading Data from localStorage**: Retrieves the TODOs upon app startup.
+
+## 🎉 Conclusion
+
+This TODO App is a great starting point for learning React.js and state management. Whether you're new to React or looking to brush up on your skills, this project is a valuable exercise in building functional and interactive user interfaces.
+
+
+
